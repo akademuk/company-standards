@@ -4,13 +4,12 @@ jQuery(document).ready(function ($) {
     $('input[type="tel"]').mask('+38(999) 999-99-99');
 
      // получаем токен от reCaptcha 
-     grecaptcha.ready(function () {
-        // ключ сайта тут нужно менять
-        grecaptcha.execute('6LeS8ygmAAAAAHevT7-0kqokA8gd4n8e2pOxYnvI', { action: 'homepage' }).then(function (token) {
-            console.log(token);
-            document.getElementById('g-recaptcha-response').value = token;
-        });
-    });
+    //  grecaptcha.ready(function () {
+    //     grecaptcha.execute('6LeS8ygmAAAAAHevT7-0kqokA8gd4n8e2pOxYnvI', { action: 'homepage' }).then(function (token) {
+    //         console.log(token);
+    //         document.getElementById('g-recaptcha-response').value = token;
+    //     });
+    // });
 
     // добавляем адрес в форму (для рекламы)
     let fullURL = window.location.href;

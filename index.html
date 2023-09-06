@@ -14,11 +14,11 @@
     <div class="burger-menu">
         <div class="burger-menu-main">
             <ul>
-                <li><a href="#" class="burger-link-close">test 1</a></li>
-                <li><a href="#" class="burger-link-close">test 2</a></li>
-                <li><a href="#" class="burger-link-close">test 3</a></li>
-                <li><a href="#" class="burger-link-close">test 4</a></li>
-                <li><a href="#" class="burger-link-close">test 5</a></li>
+                <li><a href="#links" class="burger-link-close">test 1</a></li>
+                <li><a href="#links" class="burger-link-close">test 2</a></li>
+                <li><a href="#links" class="burger-link-close">test 3</a></li>
+                <li><a href="#links" class="burger-link-close">test 4</a></li>
+                <li><a href="#links" class="burger-link-close">test 5</a></li>
             </ul>
         </div>
     </div>
@@ -110,11 +110,9 @@
         <div class="slider-dots"></div>
     </section>
 
-    <section>
+    <section id="links">
         <h2>Контактная форма с технологией Ajax</h2>
         <div class="form-container">
-            <h2>Контактна форма</h2>
-    
             <div id="note"></div>
             <div id="fields">
                 <form id="ajax-contact-form" action="" data-form-validate="true">
@@ -129,7 +127,7 @@
                         <span class="valid-text">Field validation is successful.</span>
                     </label>
                     <label for="tel" class="input-tel">
-                        <input type="tel" name="phone" value="" id="tel" placeholder="Телефон" required />
+                        <input type="tel" name="phone" value="" id="tel" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ" required pattern="\d{3}-\d{2}-\d{3}"/>
                         <span class="no-valid">This field is required.</span>
                         <span class="valid-text">Field validation is successful.</span>
                     </label>
@@ -157,17 +155,18 @@
         </div>
     </section>
 
+    <section class="tab-container">
+        <div class="tabs">
+            <div class="tab" data-tab="tab1">Tab 1</div>
+            <div class="tab" data-tab="tab2">Tab 2</div>
+            <div class="tab" data-tab="tab3">Tab 3</div>
+        </div>
+        <div class="tab-content" id="tab1">Содержимое вкладки 1</div>
+        <div class="tab-content" id="tab2">Содержимое вкладки 2</div>
+        <div class="tab-content" id="tab3">Содержимое вкладки 3</div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
+   
 
 
 
@@ -181,7 +180,7 @@
     <script src="script/jquery.maskedinput.min.js"></script>
     <script src="script/contactform.js"></script>
     <script src="script/slick.js"></script>
-    <script src="contact.php"></script>
+
 
     <script src="script/script.js"></script>
 </body>

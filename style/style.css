@@ -348,10 +348,10 @@ textarea {
 @font-face {
     font-family: 'OpenSansHebrew';
     src: url(../fonts/OpenSansHebrew-Regular.eot);
-    src: url(../fonts/OpenSansHebrew-Regular?#iefix) format("embedded-opentype"), 
-         url(../fonts/OpenSansHebrew-Regular.woff2) format("woff2"), 
-         url(../fonts/OpenSansHebrew-Regular.woff) format("woff"), 
-         url(../fonts/OpenSansHebrew-Regular.ttf) format("truetype");
+    src: url(../fonts/OpenSansHebrew-Regular?#iefix) format("embedded-opentype"),
+        url(../fonts/OpenSansHebrew-Regular.woff2) format("woff2"),
+        url(../fonts/OpenSansHebrew-Regular.woff) format("woff"),
+        url(../fonts/OpenSansHebrew-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -359,7 +359,7 @@ textarea {
 
 /*---------------------------------------------------------------*/
 
-/* Настройка hove, active эфектов */ 
+/* Настройка hove, active эфектов */
 .button-1 {
     transition: all 0.5s;
     display: inline-flex;
@@ -367,9 +367,10 @@ textarea {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background:#FFAF3F;
+    background: #FFAF3F;
     border: none;
 }
+
 .button-2 {
     transition: all 0.5s;
     display: inline-flex;
@@ -377,9 +378,10 @@ textarea {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background:#FFEFE5;
+    background: #FFEFE5;
     border: none;
 }
+
 .button-3 {
     transition: all 0.5s;
     display: inline-flex;
@@ -389,33 +391,40 @@ textarea {
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
+
 .button-1:hover {
     transition: all 0.5s;
     background: #FF9D66;
 }
+
 .button-1:active {
     transition: all 0.5s;
     background: #FF7D33;
 }
+
 .button-2:hover {
     transition: all 0.5s;
     background: #FFDECC;
 }
+
 .button-2:active {
     transition: all 0.5s;
     border: 2px solid #FF9D66;
     background: #FFCEB2;
 }
+
 .button-3:hover {
     transition: all 0.5s;
     border: 1px solid rgba(0, 0, 0, 0.12);
     background: rgba(0, 0, 0, 0.04);
 }
+
 .button-3:active {
     transition: all 0.5s;
     border: 2px solid rgba(0, 0, 0, 0.12);
-    background:rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.04);
 }
+
 .links-1 {
     transition: all 0.5s;
     color: #393939;
@@ -425,14 +434,17 @@ textarea {
     cursor: pointer;
     line-height: 180%;
 }
+
 .links-1:hover {
     transition: all 0.5s;
-    color: #FFAF3F; 
+    color: #FFAF3F;
 }
+
 .links-1:active {
     transition: all 0.5s;
-    color: #FF7D33; 
+    color: #FF7D33;
 }
+
 .links-2 {
     transition: all 0.5s;
     color: #444BD3;
@@ -442,21 +454,24 @@ textarea {
     cursor: pointer;
     line-height: 180%;
 }
+
 .links-2:hover {
     transition: all 0.5s;
-    color: #FFAF3F; 
+    color: #FFAF3F;
 }
+
 .links-2:active {
     transition: all 0.5s;
-    color: #FF7D33; 
+    color: #FF7D33;
 }
+
 /*---------------------------------------------------------------*/
 
-/* Аккардион */ 
+/* Аккардион */
 .accardion-heading {
     position: relative;
     padding: 16px;
-    color:#2E2E2E;
+    color: #2E2E2E;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -464,6 +479,7 @@ textarea {
     background: #FFF7EC;
     cursor: pointer;
 }
+
 .accardion-contents {
     display: flex;
     padding: 24px;
@@ -475,12 +491,15 @@ textarea {
     background: #FFF;
     display: none;
 }
+
 .accardion-container.active .accardion-contents {
     display: flex !important;
 }
+
 .accardion-container {
     margin-bottom: 16px;
 }
+
 .accardion-heading::before {
     content: '';
     background: url(../image/accardion.svg);
@@ -494,16 +513,23 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .accardion-heading.active::before {
     transition: all 0.5s;
-    transform:  translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
+
 /*---------------------------------------------------------------*/
 
-/* Слайдер */ 
+/* Слайдер */
 .slider-container .slick-slide {
     padding: 0 16px;
 }
+
+.slider-container .slick-track {
+    padding: 20px 0;
+}
+
 .slider-item {
     display: flex !important;
     height: 445px;
@@ -521,8 +547,12 @@ textarea {
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
-} 
+    line-height: 24px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(247, 0, 247, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(247, 0, 247, 1);
+    box-shadow: 0px 0px 20px 0px rgba(247, 0, 247, 1);
+}
+
 .slider-dots {
     display: flex;
     justify-content: center;
@@ -530,9 +560,11 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .slider-dots .slick-dots {
     display: flex;
 }
+
 .slider-dots .slick-dots li {
     margin-right: 4px;
     width: 12px;
@@ -541,20 +573,24 @@ textarea {
     cursor: pointer;
     background: red;
 }
+
 .slider-dots .slick-dots li.slick-active {
     background: blueviolet;
 }
+
 .slider-dots .slick-dots li button {
     padding: 0;
     font-size: 0;
     border: none;
 }
+
 .slider-dots .slick-dots li:nth-last-of-type(1) {
     margin-right: 0;
 }
+
 /*---------------------------------------------------------------*/
 
-/* Бургер меню */ 
+/* Бургер меню */
 .burger-icon {
     display: flex;
     flex-direction: column;
@@ -570,12 +606,14 @@ textarea {
     position: relative;
     z-index: 101;
 }
+
 .bar {
     background: black;
     width: 18px;
     height: 1px !important;
     margin: 2px 0 !important;
 }
+
 .burger-menu {
     transform: translateY(-100vh);
     position: absolute;
@@ -590,32 +628,39 @@ textarea {
     justify-content: center;
     flex-direction: column;
 }
+
 .burger-menu.open {
     transform: translateY(0px);
     transition: all 0.5s;
 }
+
 .burger-icon.open .bar:nth-child(2) {
     transform: scaleX(0);
     /* Скрываем средний бар для анимации крестика */
 }
+
 .burger-icon.open .bar:first-child {
     transform: translateY(3px) rotate(45deg);
     /* Первый бар крестика */
 }
+
 .burger-icon.open .bar:last-child {
     transform: translateY(-7px) rotate(-45deg);
     /* Последний бар крестика */
 }
+
 .burger-icon.open {
     background: #F7BB6F;
     transition: all 0.5s;
 }
+
 .body.open {
     overflow: hidden;
 }
+
 /*---------------------------------------------------------------*/
 
-/* Попап */ 
+/* Попап */
 .popup {
     display: none;
     position: fixed;
@@ -626,6 +671,7 @@ textarea {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 200;
 }
+
 .popup-content {
     background-color: #fff;
     border-radius: 5px;
@@ -635,6 +681,7 @@ textarea {
     padding: 20px;
     position: relative;
 }
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -642,14 +689,16 @@ textarea {
     font-size: 24px;
     cursor: pointer;
 }
+
 .close-button:hover {
     color: red;
 }
+
 /*---------------------------------------------------------------*/
 
-/* Форма */ 
+/* Форма */
 .novalid {
-	border-color: red !important;
+    border-color: red !important;
 }
 
 .notification_error {
@@ -673,21 +722,28 @@ textarea {
     text-align: center;
     -moz-border-radius: 5px;
 }
+
 #ajax-contact-form {
     display: flex;
     flex-direction: column;
     width: 500px;
 }
+
 #ajax-contact-form label {
     margin-bottom: 20px;
     position: relative;
 }
+
 #ajax-contact-form label input {
     width: 348px;
     height: 52px;
     padding: 6px 16px 5px 44px;
     box-sizing: border-box;
+    border-radius: 16px;
+    border: 2px solid #DDD;
+    background: #FFF;
 }
+
 #ajax-contact-form label input::placeholder {
     color: rgba(0, 0, 0, 0.32);
     font-size: 16px;
@@ -695,6 +751,7 @@ textarea {
     font-weight: 500;
     line-height: normal;
 }
+
 .input-name::after {
     content: "";
     background: url(../image/name.svg);
@@ -707,6 +764,7 @@ textarea {
     width: 20px;
     height: 20px;
 }
+
 .input-email::after {
     content: "";
     background: url(../image/name.svg);
@@ -719,6 +777,7 @@ textarea {
     width: 20px;
     height: 20px;
 }
+
 .input-tel::after {
     content: "";
     background: url(../image/tel.svg);
@@ -731,6 +790,7 @@ textarea {
     width: 20px;
     height: 20px;
 }
+
 .no-valid {
     padding-left: 20px;
     display: flex;
@@ -739,13 +799,14 @@ textarea {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px; 
+    line-height: 16px;
     letter-spacing: -0.08px;
     position: absolute;
     left: 0;
     bottom: -18px;
     opacity: 0;
 }
+
 .no-valid::after {
     content: "";
     background: url(../image/no-valid.svg);
@@ -758,6 +819,7 @@ textarea {
     left: 0;
     transform: translateY(-50%);
 }
+
 .valid-text {
     padding-left: 20px;
     display: flex;
@@ -766,13 +828,14 @@ textarea {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px; 
+    line-height: 16px;
     letter-spacing: -0.08px;
     position: absolute;
     left: 0;
     bottom: -18px;
     opacity: 0;
 }
+
 .valid-text::after {
     content: "";
     background: url(../image/valid.svg);
@@ -785,19 +848,37 @@ textarea {
     left: 0;
     transform: translateY(-50%);
 }
-.novalid + .no-valid {
+
+.novalid+.no-valid {
     opacity: 1 !important;
 }
-.valid ~ .valid-text {
+
+.valid~.valid-text {
     opacity: 1 !important;
 }
+
 .message textarea {
     width: 348px;
     height: 200px;
     padding: 6px 16px 5px 16px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     resize: none;
     margin-top: 20px;
+}
+
+/*---------------------------------------------------------------*/
+
+/* Табы */
+.tab {
+    height: 50px;
+    border: 1px solid gray;
+}
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
 /*---------------------------------------------------------------*/
 
@@ -808,40 +889,61 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive  */
 
-@media  (max-width: 1200px) {  
+@media (max-width: 1200px) {}
 
-} 
-/* //max-width: 1200px */  
+/* //max-width: 1200px */
 
-@media  (max-width: 991px) {  
+@media (max-width: 991px) {}
 
-} 
-/* //max-width: 991px */  
+/* //max-width: 991px */
 
-@media (max-width: 800px) {  
+@media (max-width: 800px) {}
 
-}  
-/* //max-width: 800px */  
+/* //max-width: 800px */
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {}
 
-} 
-/* //max-width: 768px */  
+/* //max-width: 768px */
 
-@media(max-width: 640px) {  
+@media(max-width: 640px) {}
 
-}  
-/* //max-width: 640px */  
+/* //max-width: 640px */
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {}
 
-} 
-/* //max-width: 480px */  
+/* //max-width: 480px */
 
 
-@media (max-width: 375px) { 
+@media (max-width: 375px) {}
 
-} 
 /* //max-width: 375px */

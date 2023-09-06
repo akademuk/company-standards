@@ -56,6 +56,8 @@ $(document).ready(function () {
             dots: true,
             centerMode: true,
             appendDots: $('.slider-dots'),
+            // prevArrow: $('.prev'),
+            // nextArrow: $('.next'),
             responsive: [
                 {
                   breakpoint: 1200,
@@ -152,5 +154,29 @@ $(document).ready(function () {
             closePopup();
         }
     });
+
+
+
+    // Tabs
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Скрыть все содержимое вкладок
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Найти соответствующее содержимое вкладки и показать его
+            const tabId = tab.getAttribute('data-tab');
+            const tabContent = document.getElementById(tabId);
+            tabContent.classList.add('active');
+        });
+    });
+
+    // По умолчанию показать первую вкладку
+    tabContents[0].classList.add('active');
+
 
 });

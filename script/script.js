@@ -36,6 +36,7 @@ $(document).ready(function () {
             }
         });
     });
+    // --------------------------------------------------------------------
     
     // Слайдер
     $(document).ready(function () {
@@ -106,6 +107,7 @@ $(document).ready(function () {
             }
         });
     });
+    // --------------------------------------------------------------------
 
     // Плавный переход к якорю 
     $('a[href^="#"]').on('click', function (event) {
@@ -117,6 +119,7 @@ $(document).ready(function () {
             }, 800);
         }
     });
+    // --------------------------------------------------------------------
 
     // Бургер меню
     document.querySelectorAll('.burger-link-close').forEach(link => {
@@ -131,6 +134,7 @@ $(document).ready(function () {
         document.querySelector('.burger-menu').classList.toggle('open');
         document.querySelector('.body').classList.toggle('open');
     });
+    // --------------------------------------------------------------------
 
     // Попап
     const openPopupButton = document.getElementById('openPopupButton');
@@ -154,29 +158,73 @@ $(document).ready(function () {
             closePopup();
         }
     });
+    // --------------------------------------------------------------------
 
 
 
     // Tabs
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
+    
+    tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
             // Скрыть все содержимое вкладок
             tabContents.forEach(content => {
                 content.classList.remove('active');
             });
-
+    
             // Найти соответствующее содержимое вкладки и показать его
             const tabId = tab.getAttribute('data-tab');
             const tabContent = document.getElementById(tabId);
             tabContent.classList.add('active');
+    
+            // Убрать класс 'active' у текущей активной вкладки
+            tabs.forEach((t, i) => {
+                if (i === index) {
+                    t.classList.add('active');
+                } else {
+                    t.classList.remove('active');
+                }
+            });
         });
+    
+        // По умолчанию показать первую вкладку
+        if (index === 0) {
+            tab.classList.add('active');
+        }
+    });
+    
+    // --------------------------------------------------------------------
+
+
+    // Box container
+    var itemsToShow = 3; // Number of items to show on each click
+    var currentIndex = 0;
+
+    function showItems() {
+        var $sliderItems = $('.feedback-item');
+        var totalItems = $sliderItems.length;
+
+        for (var i = currentIndex; i < currentIndex + itemsToShow; i++) {
+            if (i >= totalItems) {
+                break;
+            }
+            $sliderItems.eq(i).addClass('visible');
+        }
+
+        currentIndex += itemsToShow;
+
+        if (currentIndex >= totalItems) {
+            $('.feedback-box-btn ').hide();
+        }
+    }
+
+    $('.feedback-box-btn').on('click', function () {
+        showItems();
     });
 
-    // По умолчанию показать первую вкладку
-    tabContents[0].classList.add('active');
+    showItems(); // Show initial items
+    // --------------------------------------------------------------------
 
 
 });

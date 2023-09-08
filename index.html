@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,49 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
+
 <body class="body">
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span id="closePopupButton" class="close-button">&times;</span>
+            <h2>Popup Content</h2>
+            <p>This is a simple popup modal.</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="logotype">
+            <a href="index.html">
+                <img src="" alt="">
+                logotype
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#accardion">accardion</a>
+                </li>
+                <li>
+                    <a href="#slider">slider</a>
+                </li>
+                <li>
+                    <a href="#tab">tabs</a>
+                </li>
+                <li>
+                    <a href="#links">form</a>
+                </li>
+                <li>
+                    <a href="#box">box</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="openPopupButton">Open Popup</button>
+        <div class="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
 
     <div class="burger-menu">
         <div class="burger-menu-main">
@@ -22,151 +65,219 @@
             </ul>
         </div>
     </div>
-    
-    <div class="burger-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
 
-    <button id="openPopupButton">Open Popup</button>
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <span id="closePopupButton" class="close-button">&times;</span>
-            <h2>Popup Content</h2>
-            <p>This is a simple popup modal.</p>
-        </div>
-    </div>
 
-    <section class="button-style">
-        <button class="button-1">button 1</button>
-        <button class="button-2">button 2</button>
-        <button class="button-3">button 3</button>
-        <ul>
-            <li class="links-1">
-                link-1
-            </li>
-            <li class="links-2">
-                link-2
-            </li>
-        </ul>
-    </section>
-
-    <section class="accardion">
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #1</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #2</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #2</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #3</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #4</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #5</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+    <main>
+        <section class="btn-st">
+            <h2>Стили кнопок</h2>
+            <div class="button-style">
+                <button class="button-1">button 1</button>
+                <button class="button-2">button 2</button>
+                <button class="button-3">button 3</button>
+                <ul>
+                    <li class="links-1">
+                        link-1
+                    </li>
+                    <li class="links-2">
+                        link-2
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #6</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-
-        <div class="accardion-container">
-            <div class="accardion-heading">Tittle #7</div>
-            <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut. Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
-        </div>
-    </div>
-    </section>
-
-    <section class="slider">
-        <div class="slider-container">
-            <div class="slider-item">slider 1</div>
-            <div class="slider-item">slider 2</div>
-            <div class="slider-item">slider 3</div>
-            <div class="slider-item">slider 4</div>
-            <div class="slider-item">slider 5</div>
-            <div class="slider-item">slider 6</div>
-            <div class="slider-item">slider 7</div>
-            <div class="slider-item">slider 8</div>
-        </div>
-        <div class="slider-dots"></div>
-    </section>
-
-    <section id="links">
-        <h2>Контактная форма с технологией Ajax</h2>
-        <div class="form-container">
-            <div id="note"></div>
-            <div id="fields">
-                <form id="ajax-contact-form" action="" data-form-validate="true">
-                    <label for="name" class="input-name">
-                        <input type="text" name="name" id="name" value="" placeholder="Ім'я" required/>
-                        <span class="no-valid">This field is required.</span>
-                        <span class="valid-text">Field validation is successful.</span>
-                    </label>
-                    <label for="email" class="input-email">
-                        <input type="email" name="email" id="email" value="" placeholder="Email" required />
-                        <span class="no-valid">This field is required.</span>
-                        <span class="valid-text">Field validation is successful.</span>
-                    </label>
-                    <label for="tel" class="input-tel">
-                        <input type="tel" name="phone" value="" id="tel" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ" required pattern="\d{3}-\d{2}-\d{3}"/>
-                        <span class="no-valid">This field is required.</span>
-                        <span class="valid-text">Field validation is successful.</span>
-                    </label>
-                    <select name="call">
-                        <option value="">Як з вами зв'язатись?</option>
-                        <option value="Telegram">Telegram</option>
-                        <option value="WhatsApp">WhatsApp</option>
-                        <option value="Viber">Viber</option>
-                        <option value="Дзвінок">Дзвінок</option>
-                    </select>
-                    <label for="message" class="message">
-                        <textarea name="message" rows="5" cols="25" id="message" placeholder="Повідомлення" required></textarea>
-                        <span class="no-valid">This field is required.</span>
-                        <span class="valid-text">Field validation is successful.</span>
-                    </label>
-    
-                    <input name="url" type="hidden">
-                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-    
-                    <input class="btn" type="submit" name="submit" value="Відправити" />
-    
-                    <div class="text-danger" id="recaptchaError"></div>
-                </form>
+        <section class="accardion" id="accardion">
+            <h2>Аккардион</h2>
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #1</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
             </div>
-        </div>
-    </section>
 
-    <section class="tab-container">
-        <div class="tabs">
-            <div class="tab" data-tab="tab1">Tab 1</div>
-            <div class="tab" data-tab="tab2">Tab 2</div>
-            <div class="tab" data-tab="tab3">Tab 3</div>
-        </div>
-        <div class="tab-content" id="tab1">Содержимое вкладки 1</div>
-        <div class="tab-content" id="tab2">Содержимое вкладки 2</div>
-        <div class="tab-content" id="tab3">Содержимое вкладки 3</div>
-    </section>
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #2</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
 
-   
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #2</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
+
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #3</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
+
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #4</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
+
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #5</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                </div>
+            </div>
+
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #6</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
+
+            <div class="accardion-container">
+                <div class="accardion-heading">Tittle #7</div>
+                <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+            </div>
+            </div>
+        </section>
+
+        <section class="slider" id="slider">
+            <h2>Слайдер</h2>
+            <div class="slider-container">
+                <div class="slider-item">slider 1</div>
+                <div class="slider-item">slider 2</div>
+                <div class="slider-item">slider 3</div>
+                <div class="slider-item">slider 4</div>
+                <div class="slider-item">slider 5</div>
+                <div class="slider-item">slider 6</div>
+                <div class="slider-item">slider 7</div>
+                <div class="slider-item">slider 8</div>
+            </div>
+            <div class="slider-dots"></div>
+        </section>
+
+        <section id="links">
+            <h2>Контактная форма с технологией Ajax</h2>
+            <div class="form-container">
+                <div id="note"></div>
+                <div id="fields">
+                    <form id="ajax-contact-form" action="" data-form-validate="true">
+                        <label for="name" class="input-name">
+                            <input type="text" name="name" id="name" value="" placeholder="Ім'я" required />
+                            <span class="no-valid">This field is required.</span>
+                            <span class="valid-text">Field validation is successful.</span>
+                        </label>
+                        <label for="email" class="input-email">
+                            <input type="email" name="email" id="email" value="" placeholder="Email" required />
+                            <span class="no-valid">This field is required.</span>
+                            <span class="valid-text">Field validation is successful.</span>
+                        </label>
+                        <label for="tel" class="input-tel">
+                            <input type="tel" name="phone" value="" id="tel" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ"
+                                required pattern="\d{3}-\d{2}-\d{3}" />
+                            <span class="no-valid">This field is required.</span>
+                            <span class="valid-text">Field validation is successful.</span>
+                        </label>
+                        <select name="call">
+                            <option value="">Як з вами зв'язатись?</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Viber">Viber</option>
+                            <option value="Дзвінок">Дзвінок</option>
+                        </select>
+                        <label for="message" class="message">
+                            <textarea name="message" rows="5" cols="25" id="message" placeholder="Повідомлення"
+                                required></textarea>
+                            <span class="no-valid">This field is required.</span>
+                            <span class="valid-text">Field validation is successful.</span>
+                        </label>
+
+                        <input name="url" type="hidden">
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+
+                        <input class="btn" type="submit" name="submit" value="Відправити" />
+
+                        <div class="text-danger" id="recaptchaError"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-container" id="tab">
+            <h2>Контейнер с табами</h2>
+            <div class="tabs">
+                <div class="tab" data-tab="tab1">Tab 1</div>
+                <div class="tab" data-tab="tab2">Tab 2</div>
+                <div class="tab" data-tab="tab3">Tab 3</div>
+            </div>
+            <div class="tab-content active" id="tab1">Содержимое вкладки 1</div>
+            <div class="tab-content" id="tab2">Содержимое вкладки 2</div>
+            <div class="tab-content" id="tab3">Содержимое вкладки 3</div>
+        </section>
+
+        <div class="feedback-box" id="box">
+            <h2>Box Container</h2>
+            <div class="feedback-slider">
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       1
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       2
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       3
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       4
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       5
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       6
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <div class="feedback-item-container">
+                       7
+                    </div>
+                </div>
+            </div>
+            <button class="feedback-box-btn">
+                Показати ще 3
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+      
+        
+    </footer>
+
+
 
 
 
@@ -184,4 +295,5 @@
 
     <script src="script/script.js"></script>
 </body>
+
 </html>

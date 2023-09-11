@@ -227,4 +227,27 @@ $(document).ready(function () {
     // --------------------------------------------------------------------
 
 
+    // добалвенна чистка формы
+    $(document).ready(function() {
+        // Добавляем обработчик события input для добавления/удаления класса "active"
+        $(".input-container input").on("input", function() {
+            var clearButton = $(this).parent().find(".input-clear");
+            if ($(this).val().trim() !== "") {
+                clearButton.addClass("active");
+            } else {
+                clearButton.removeClass("active");
+            }
+        });
+    
+        // Добавляем обработчик события click для очистки соответствующего input
+        $(".input-clear").click(function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+            var input = $($(this).data("clear-selector"));
+            input.val("");
+            $(this).removeClass("active");
+        });
+    });
+    
+    
+    
 });

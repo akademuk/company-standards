@@ -402,6 +402,15 @@ textarea {
     background: #FF7D33;
 }
 
+.button-1:focus {
+    transition: all 0.5s;
+    background: #A08158;
+}
+
+.button-1:disabled {
+    background: #727272;
+}
+
 .button-2:hover {
     transition: all 0.5s;
     background: #FFDECC;
@@ -411,6 +420,15 @@ textarea {
     transition: all 0.5s;
     border: 2px solid #FF9D66;
     background: #FFCEB2;
+}
+
+.button-2:focus {
+    transition: all 0.5s;
+    background: #A08158;
+}
+
+.button-2:disabled {
+    background: #727272;
 }
 
 .button-3:hover {
@@ -423,6 +441,15 @@ textarea {
     transition: all 0.5s;
     border: 2px solid rgba(0, 0, 0, 0.12);
     background: rgba(0, 0, 0, 0.04);
+}
+
+.button-3:focus {
+    transition: all 0.5s;
+    background: #A08158;
+}
+
+.button-3:disabled {
+    background: #727272;
 }
 
 .links-1 {
@@ -479,6 +506,7 @@ textarea {
     background: #FFF7EC;
     cursor: pointer;
 }
+
 .accardion {
     margin-bottom: 32px;
 }
@@ -595,10 +623,12 @@ textarea {
 .slider {
     margin-bottom: 64px;
 }
+
 .slider h2 {
     width: 100%;
     text-align: center;
 }
+
 /*---------------------------------------------------------------*/
 
 /* Бургер меню */
@@ -704,6 +734,7 @@ textarea {
 .close-button:hover {
     color: red;
 }
+
 #openPopupButton {
     display: flex;
     padding: 16px 24px;
@@ -712,13 +743,14 @@ textarea {
     gap: 8px;
     border-radius: 12px;
     background: #FDE614;
-    color:#282828;
+    color: #282828;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     border: none;
 }
+
 /*---------------------------------------------------------------*/
 
 /* Форма */
@@ -778,6 +810,7 @@ textarea {
     border: 2px solid #DDD;
     background: #FFF;
 }
+
 #ajax-contact-form textarea::placeholder {
     color: rgba(0, 0, 0, 0.32);
     font-size: 16px;
@@ -785,6 +818,7 @@ textarea {
     font-weight: 500;
     line-height: normal;
 }
+
 #ajax-contact-form select {
     width: 100%;
     height: 52px;
@@ -815,11 +849,12 @@ textarea {
     background-size: contain;
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 62%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
 }
+
 
 .input-email::after {
     content: "";
@@ -828,11 +863,12 @@ textarea {
     background-size: contain;
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 62%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
 }
+
 
 .input-tel::after {
     content: "";
@@ -841,11 +877,12 @@ textarea {
     background-size: contain;
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 62%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
 }
+
 
 .no-valid {
     padding-left: 20px;
@@ -921,15 +958,18 @@ textarea {
     resize: none;
     margin-top: 20px;
 }
+
 #links {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .form-container {
     width: 500px;
 }
+
 .btn {
     display: flex;
     padding: 16px 24px;
@@ -945,6 +985,40 @@ textarea {
     line-height: 150%;
     border: none;
 }
+input:hover {
+    transition: all 0.5s;
+    border: 2px solid #FFD6A6 !important;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+input:active {
+    transition: all 0.5s;
+    border: 2px solid #F7BB6F !important;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+input:disabled {
+    border: 2px solid#DDD !important;
+    background: #DDD !important;
+}
+.input-clear {
+    background: url(../image/clear.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: none;
+    right: 0;
+    display: none;
+    top: 46%;
+    transform: translateX(-46%);
+}
+.input-clear.active {
+display: block;
+}
 /*---------------------------------------------------------------*/
 
 /* Табы */
@@ -952,6 +1026,7 @@ textarea {
     height: 50px;
     border: 1px solid gray;
 }
+
 .tab-content {
     display: none;
     height: 150px;
@@ -959,25 +1034,30 @@ textarea {
     width: 50%;
     margin: 32px auto 0 auto;
 }
+
 .tab-content.active {
     display: flex;
     align-items: center;
     height: 150px;
     justify-content: center;
 }
+
 .tab-container {
     margin-top: 64px;
     margin-bottom: 64px;
     width: 100%;
 }
+
 .tab-container h2 {
     text-align: center;
 }
+
 .tabs {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .tab {
     display: flex;
     padding: 16px 24px;
@@ -991,17 +1071,21 @@ textarea {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    cursor: pointer;
     border: none;
     margin-right: 32px;
 }
+
 .tab:nth-last-of-type(1) {
     margin-right: 0;
 }
+
 .tab.active {
     color: #FDE614;
     background: transparent;
     border: 1px solid #FDE614;
 }
+
 /*---------------------------------------------------------------*/
 
 /* header */
@@ -1013,63 +1097,74 @@ header {
     padding: 0 32px;
     box-sizing: border-box;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     align-items: center;
 }
+
 header nav ul li {
     margin-right: 20px;
 }
+
 header nav ul li a {
-    color:#282828;
+    color: #282828;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
     line-height: 150%;
 }
+
 header nav ul li:nth-last-of-type(1) {
     margin-right: 0;
-} 
+}
+
 .logotype a {
-    color:#282828;
+    color: #282828;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    line-height: 150%; 
+    line-height: 150%;
 }
+
 .button-style {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
     flex-direction: column;
 }
+
 .button-style ul {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
+
 .btn-st {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 h2 {
-    color:#282828;
+    color: #282828;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
     margin-bottom: 32px;
 }
+
 .accardion {
     display: flex;
     align-items: center;
     flex-direction: column;
 
 }
+
 /*---------------------------------------------------------------*/
 
 /* box */
@@ -1084,6 +1179,7 @@ h2 {
     margin: 0 auto;
     margin-bottom: 64px;
 }
+
 .feedback-slider {
     width: 100%;
     display: flex;
@@ -1091,6 +1187,7 @@ h2 {
     justify-content: space-between;
     gap: 16px;
 }
+
 .feedback-item {
     display: none;
     padding: 24px;
@@ -1107,35 +1204,49 @@ h2 {
     min-width: 356px;
     transition: all 0.5s;
 }
+
 .feedback-item.visible {
     display: flex;
 }
+
 /*---------------------------------------------------------------*/
 
 
+.hidden {
+    display: none;
+}
+.closeMe {
+    background: transparent;
+}
+
 
 footer svg {
-opacity: 0.15;
-mix-blend-mode: color-burn;
+    opacity: 0.15;
+    mix-blend-mode: color-burn;
 
-width: 834.511px;
-height: 823px;
+    width: 834.511px;
+    height: 823px;
 }
+
 .ww {
     position: absolute;
-  
+
     mix-blend-mode: multiply;
 }
+
 footer {
     position: relative;
 }
+
 .clip-path-div {
-    width: 100%; /* Установите нужную ширину и высоту */
+    width: 100%;
+    /* Установите нужную ширину и высоту */
     height: 100%;
-    clip-path: url(#clipPath); /* Используйте id clipPath, чтобы ссылаться на ваш SVG-код */
-   position: absolute;
-   top: 0;
-   mix-blend-mode: multiply;
+    clip-path: url(#clipPath);
+    /* Используйте id clipPath, чтобы ссылаться на ваш SVG-код */
+    position: absolute;
+    top: 0;
+    mix-blend-mode: multiply;
     background-size: cover;
 }
 

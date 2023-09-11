@@ -7,6 +7,7 @@
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LeS8ygmAAAAAHevT7-0kqokA8gd4n8e2pOxYnvI"></script>
     <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
@@ -66,7 +67,6 @@
         </div>
     </div>
 
-
     <main>
         <section class="btn-st">
             <h2>Стили кнопок</h2>
@@ -91,7 +91,8 @@
                 <div class="accardion-heading">Tittle #1</div>
                 <div class="accardion-contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
                     velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi aut.
-                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!</div>
+                    Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                </div>
             </div>
 
             <div class="accardion-container">
@@ -167,21 +168,27 @@
                 <div id="note"></div>
                 <div id="fields">
                     <form id="ajax-contact-form" action="" data-form-validate="true">
-                        <label for="name" class="input-name">
+                        <label for="name" class="input-name input-container">
+                            Name
                             <input type="text" name="name" id="name" value="" placeholder="Ім'я" required />
                             <span class="no-valid">This field is required.</span>
                             <span class="valid-text">Field validation is successful.</span>
+                            <button class="input-clear" data-clear-selector="#name"></button>
                         </label>
-                        <label for="email" class="input-email">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" required />
+                        <label for="email" class="input-email input-container">
+                            Email
+                            <input type="email" name="email" id="email" placeholder="Email" />
                             <span class="no-valid">This field is required.</span>
                             <span class="valid-text">Field validation is successful.</span>
+                            <button class="input-clear" data-clear-selector="#email"></button>
                         </label>
-                        <label for="tel" class="input-tel">
+                        <label for="tel" class="input-tel input-container">
+                            Phone
                             <input type="tel" name="phone" value="" id="tel" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ"
                                 required pattern="\d{3}-\d{2}-\d{3}" />
                             <span class="no-valid">This field is required.</span>
                             <span class="valid-text">Field validation is successful.</span>
+                            <button class="input-clear" data-clear-selector="#tel"></button>
                         </label>
                         <select name="call">
                             <option value="">Як з вами зв'язатись?</option>
@@ -190,7 +197,7 @@
                             <option value="Viber">Viber</option>
                             <option value="Дзвінок">Дзвінок</option>
                         </select>
-                        <label for="message" class="message">
+                        <label for="message" class="message input-container">
                             <textarea name="message" rows="5" cols="25" id="message" placeholder="Повідомлення"
                                 required></textarea>
                             <span class="no-valid">This field is required.</span>
@@ -270,27 +277,30 @@
             </button>
         </div>
 
+        <a data-fancybox data-src="#services1" data-modal="true" href="javascript:;" class="stories-btn">Детальніше</a>
+            <div class="hidden">
+                <div class="modal-farmer" id="services1">
+                    <button data-fancybox-close class="btn closeMe">
+                        <img width="24" height="24" src="image/close.svg" alt="закрити">
+                    </button>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi consequuntur corporis fugit impedit, velit est. Laboriosam, est sint nostrum, doloribus vitae at aperiam adipisci doloremque quis nulla vero non similique.
+                    </div>
+                </div>
+            </div>
+
     </main>
 
     <footer>
-      
-        
     </footer>
-
-
-
-
-
-
-
-
-
+   
 
     <script src="script/jquery-3.7.0.min.js"></script>
     <script src="script/jquery.validate.min.js"></script>
     <script src="script/jquery.maskedinput.min.js"></script>
     <script src="script/contactform.js"></script>
     <script src="script/slick.js"></script>
+    <script src="script/jquery.fancybox.min.js"></script>
 
 
     <script src="script/script.js"></script>
